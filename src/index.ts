@@ -17,6 +17,9 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.get("/wealth", (req, res) => {
+  res.send("Everything is fine");
+});
 
 // USER ROUTES 
 app.use("/api/v1/users", UserRoutes);
